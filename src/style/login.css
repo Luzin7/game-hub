@@ -1,0 +1,148 @@
+.main__login{
+  display: flex;
+  background-color: #EBEBEB;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 768px;
+  min-height: 100vh;
+  background-color: var(--bg__color);
+  color: var(--text__color);
+  padding: clamp(45px, 10%, 70px);
+}
+
+.login__logo{
+  width: 140px;
+  margin-bottom: 8em;
+  background-color: var(--purple__logo);
+}
+
+.login h1{
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.login__label{
+  display: block;
+  width: 100%;
+}
+
+.login__label span{
+  color: var(--input__text__color);
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 25px;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+.login__label .span__active{
+  color: var(--input__text__color);
+  position: absolute;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 7px 15px;
+  cursor: text;
+}
+
+.input{
+  width: 100%;
+  background-color: var(--input__bg__color);
+  border: 4px solid var(--bg__color);
+  border-radius: 15px;
+  outline: none;
+  color: var(--text__color);
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 25px 10px 15px;
+}
+
+.input:focus{
+  border: 4px solid var(--purple__outline__input);
+  transition: all 0.2s ease-out;
+}
+
+#input__wrong{
+  border: 4px solid red;
+}
+
+.button{
+  width: 125px;
+  height: 125px;
+  padding: 20px;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple__logo);
+  background-image: url(/src/assets/icons/button__login__icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
+  transition: all 0.2s ease-out;
+}
+
+#button__active{
+  background-color: var(--purple__active);
+  background-image: url(/src/assets/icons/button__login__icon__active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.login__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.login__link{
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--purple__active);
+}
+
+.login__link:hover{
+  text-decoration: underline;
+}
+
+.bg__wallpaper{
+  animation: bgdAnimation 25s infinite ease-in-out;
+  width: 100%;
+  background-image: url(/src/assets/img/bg.webp);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  mix-blend-mode: luminosity;
+  transition: all 2s ease;
+}
+
+#bg__active{
+  mix-blend-mode: normal;
+  transition: all 2s ease;
+}
+
+@keyframes bgdAnimation {
+  50% {
+    background-position-x: 54%;
+  }
+}

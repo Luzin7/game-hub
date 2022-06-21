@@ -30,7 +30,6 @@ export default class Login extends Component {
   };
 
   verifyUsername = (target) => {
-    console.log(getUser());
     if (target.value !== getUser()) {
       target.setAttribute("id", "input__wrong");
     } else if (target.value === getUser()) {
@@ -73,30 +72,31 @@ export default class Login extends Component {
             <img className="logo" src="" alt="Logo do projeto" />
           </div>
           <h1>Fazer login</h1>
-          <label className="login__label" htmlFor="nick">
-            <span>Nome de usuário</span>
-            <input
-              className="input"
-              name="nick"
-              type="text"
-              onFocus={this.handleFocus}
-              onBlur={this.handleFocusOut}
-              onInput={this.ablePassword}
-            />
-          </label>
-          <label className="login__label">
-            <span>Senha</span>
-            <input
-              className="input"
-              name="password"
-              type="password"
-              onFocus={this.handleFocus}
-              onBlur={this.handleFocusOut}
-              disabled={true}
-              onInput={this.ableButton}
-            />
-          </label>
-          {/* ajustar esse link do botão, da pra entrar mesmo sem fazer o login */}
+          <form>
+            <label className="login__label" htmlFor="nick">
+              <span>Nome de usuário</span>
+              <input
+                className="input"
+                name="nick"
+                type="text"
+                onFocus={this.handleFocus}
+                onBlur={this.handleFocusOut}
+                onInput={this.ablePassword}
+              />
+            </label>
+            <label className="login__label">
+              <span>Senha</span>
+              <input
+                className="input"
+                name="password"
+                type="password"
+                onFocus={this.handleFocus}
+                onBlur={this.handleFocusOut}
+                disabled={true}
+                onInput={this.ableButton}
+              />
+            </label>
+          </form>
           <Link to="/home">
             <button type="button" className="button" disabled={true} />
           </Link>

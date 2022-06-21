@@ -1,0 +1,38 @@
+.main__help{
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg__color);
+}
+
+.help{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 60vw; /*100vw mobile*/
+  min-height: 100vh;
+  background-color: var(--bg__color);
+  color: var(--text__color);
+  padding: clamp(45px, 10%, 70px);
+}
+
+.help h1{
+  color: var(--text__color);
+  font-weight: bold;
+  font-size: 2.7em;
+  margin-bottom: 0.7em;
+}
+
+.help p{
+  color: #EBEBEB;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.help a{
+  color: var(--purple__active);
+  font-size: 1em;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: all 0.2s;
+}

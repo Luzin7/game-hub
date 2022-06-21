@@ -1,0 +1,39 @@
+.navbar.navHome{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.userArea{
+  width: 384px;
+  background-color: var(--navBar__color);
+}
+
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0px;
+  width: 384px;
+  height: 86px;
+  background-color: var(--bg__color);
+  border-radius: 0px 15px 15px 0px;
+}
+
+.user span{
+  color: var(--purple__active);
+}
+
+.navHome .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.icon img{
+  width: 86px;
+  height: 86px;
+}

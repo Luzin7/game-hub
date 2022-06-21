@@ -1,0 +1,46 @@
+import React from "react";
+import { useParams } from "react-router-dom";
+
+import GameNavBar from ".././components/GameNavBar";
+import Footer from ".././components/Footer";
+import { GAMES } from ".././data/getGames";
+
+import ".././style/game/main.css";
+import ".././style/game/mainContent.css";
+
+export default function Game() {
+  const params = useParams();
+  const game = GAMES.find((game) => game.id === params.id)
+
+  
+  return (
+    <div className="main">
+      <GameNavBar />
+      <div className="title">
+        <h1>{game.name}</h1>
+        <p>{game.description}</p>
+        <span>
+          <a
+            href={game.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Baixe e saiba mais!
+          </a>
+        </span>
+      </div>
+      <div className="main__content">
+        <div className="media">
+          <img src={game.media} alt="" />
+        </div>
+        <div className="text__info">
+          <h2>O que é {game.name}?</h2>
+          <p className="desc">{game.description}</p>
+          <h3>Desafie seus limites</h3>
+          <p className="desc__long">{game.description__long}</p>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}

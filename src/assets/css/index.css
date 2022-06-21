@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg__color);
+  color: var(--text__color);
+}
+
+*::selection{
+  background-color: var(--purple__logo);
 }
 
 code {
@@ -30,7 +36,9 @@ html {
 }
 
 .navbar{
+  display: flex;
   width: 100%;
+  align-items: center;
   min-height: 70px;
   background-color: var(--navBar__color);
   color: var(--text__color);
@@ -40,3 +48,4 @@ a{
   color: var(--purple__active);
   text-decoration: none;
 }
+

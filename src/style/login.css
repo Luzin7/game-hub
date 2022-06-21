@@ -18,14 +18,13 @@
 
 .login__logo{
   width: 140px;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
   background-color: var(--purple__logo);
 }
 
 .login h1{
   font-size: 2.4em;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .login__label{
@@ -54,6 +53,10 @@
   cursor: text;
 }
 
+form{
+  width:100%
+}
+
 .input{
   width: 100%;
   background-color: var(--input__bg__color);
@@ -79,8 +82,7 @@
   width: 125px;
   height: 125px;
   padding: 20px;
-  margin-top: 5em;
-  margin-bottom: 10em;
+  margin: 0px;
   border-radius: 100%;
   border: none;
   display: flex;
@@ -99,8 +101,13 @@
   background-image: url(/src/assets/icons/button__login__icon__active.svg);
   background-repeat: no-repeat;
   background-position: center;
+  animation: spin .7s 1 ease-in-out;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+}
+
+@keyframes spin {
+  0%  {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}   
 }
 
 .login__links{

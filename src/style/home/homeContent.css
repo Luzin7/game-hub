@@ -1,0 +1,22 @@
+.home__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.home__content h1:first-child{
+  text-align: center;
+  font-size: 2.7em;
+  text-transform: uppercase;
+}
+
+.home__content h1:first-child::after{
+  content: "";
+  width: 500px;
+  height: 5px;
+  background: var(--purple__active);
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}

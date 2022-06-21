@@ -1,0 +1,12 @@
+.game__card{
+  text-align: center;
+  margin: 2em;
+}
+
+.game__card img{
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}

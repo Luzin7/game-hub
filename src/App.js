@@ -6,7 +6,8 @@ import Loading from "./components/Loading";
 import Ajuda from "./pages/Ajuda";
 import Cadastro from "./pages/Cadastro";
 import NotFound from "./pages/NotFound";
-import API from './pages/API';
+import ValorantAgents from "./pages/ValorantAgents";
+import LolChampions from "./pages/LolChampions";
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
 const Game = React.lazy(() => import("./pages/Game"));
@@ -47,9 +48,12 @@ export default class App extends React.Component {
           <Route
             exact
             path="/api"
-            element={<React.Suspense fallback={<Loading />}>
-              <API />
-            </React.Suspense>}
+            element={
+              <React.Suspense fallback={<Loading />}>
+                {/* <LolChampions /> */}
+                <ValorantAgents />
+              </React.Suspense>
+            }
           />
           <Route path="*" element={<NotFound />} />
         </Routes>

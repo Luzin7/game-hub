@@ -1,0 +1,23 @@
+.navbar.navHelp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.navbar.navHelp ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.navbar.navHelp li a{
+  font-size: 1.7em;
+  font-weight: lighter;
+  transition: all 0.2s;
+}
+
+.navbar.navHelp li a:hover{
+  color: var(--text__color);
+}

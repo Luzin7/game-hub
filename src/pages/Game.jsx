@@ -9,10 +9,9 @@ import ".././style/game/main.css";
 import ".././style/game/mainContent.css";
 
 export default function Game() {
-  const params = useParams();
-  const game = GAMES.find((game) => game.id === params.id)
+  const { id } = useParams();
+  const game = GAMES.find((game) => game.id === id);
 
-  
   return (
     <div className="main">
       <GameNavBar />
@@ -20,11 +19,7 @@ export default function Game() {
         <h1>{game.name}</h1>
         <p>{game.description}</p>
         <span>
-          <a
-            href={game.url}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={game.url} target="_blank" rel="noreferrer">
             Baixe e saiba mais!
           </a>
         </span>

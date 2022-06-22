@@ -1,0 +1,38 @@
+.main{
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--bg__color);
+  color: var(--text__color);
+}
+
+.title{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1, p{
+  text-align: center;
+}
+
+.title h1{
+  font-size: 4em;
+  text-transform: uppercase;
+  text-shadow: 4px 5px 0px var(--navBar__color);
+  margin-bottom: 0.2em;
+
+}
+
+.title p{
+  text-align: center;
+  width: 700px;
+  margin-bottom: 4em;
+}
+
+.title span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}

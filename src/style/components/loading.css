@@ -1,0 +1,11 @@
+.loading__body{
+  background-color: var(--bg__color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading__body img{
+mix-blend-mode: screen;
+}

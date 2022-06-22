@@ -1,0 +1,20 @@
+.game{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5em;
+}
+
+.game a, .game p{
+  background-color: var(--navBar__color);
+}
+
+.game h1{
+  margin-left: 1em;
+  
+}
+
+.game p{
+  margin-right: 1em;
+  color: var(--input__text__color);
+  font-size: 1.4em;
+}

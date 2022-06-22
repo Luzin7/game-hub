@@ -5,7 +5,7 @@ import { GAMES } from "../data/getGames";
 
 import "../style/components/gameNavBar.css";
 
-export default function HomeNavBar() {
+export default function GameNavBar() {
 
   const params = useParams();
   const game = GAMES.find((game) => game.id === params.id)

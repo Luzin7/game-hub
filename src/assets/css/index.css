@@ -7,8 +7,12 @@
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg__color);
   color: var(--text__color);
+}
+
+body{
+  background-color: var(--bg__color);
+
 }
 
 *::selection{

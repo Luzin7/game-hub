@@ -6,4 +6,4 @@ export const GAME = "/jogos/:id";
 
 // Dev
 export const AGENTS = 'agentes'
-export const AGENT = '/jogos/valorant/:id'
+export const AGENT = '/jogos/valorant/agentes/:id'

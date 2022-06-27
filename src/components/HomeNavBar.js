@@ -1,5 +1,5 @@
 import React from "react";
-import gitIcon from '../assets/icons/gitIcon.png'
+import gitIcon from "../assets/icons/gitIcon.png";
 import getUser from "../utils/getUser";
 
 import "../style/components/homeNavBar.css";
@@ -14,7 +14,9 @@ export default function HomeNavBar() {
           </h1>
         </div>
       </div>
-        <i className="icon"><img src={gitIcon} alt="" /></i>
+      <i className="icon">
+        <img src={gitIcon} alt="" />
+      </i>
     </div>
   );
 }

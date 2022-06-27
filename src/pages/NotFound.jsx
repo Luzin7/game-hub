@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import NavHelp from './../components/NavHelp';
+import NavHelp from "./../components/NavHelp";
 
-import '../style/notFound.css'
+import "../style/notFound.css";
 
 export default class NotFound extends Component {
   render() {

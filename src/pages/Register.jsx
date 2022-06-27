@@ -93,12 +93,12 @@ export default class Register extends Component {
               onInput={this.registerPassword}
             />
           </label>
-          <Link to={Path.HOME}>
+          <Link to={Path.LOGIN}>
             <button type="button" className="button" disabled={true} />
           </Link>
 
           <span className="login__link">
-            <Link to={Path.HOME}>Já possui uma conta?</Link>
+            <Link to={Path.LOGIN}>Já possui uma conta?</Link>
           </span>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.agent__content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent__content span {
+  color: var(--input__text__color);
+  margin: 1em 0px 2em 0px;
+  font-style: italic;
+}

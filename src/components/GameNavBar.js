@@ -6,9 +6,8 @@ import { GAMES } from "../data/getGames";
 import "../style/components/gameNavBar.css";
 
 export default function GameNavBar() {
-
   const params = useParams();
-  const game = GAMES.find((game) => game.id === params.id)
+  const game = GAMES.find((game) => game.id === params.id);
 
   return (
     <div className="navbar game">

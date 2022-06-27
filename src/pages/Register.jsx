@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import * as Path from "../utils/pathNames";
 import "../style/cadastro.css";
 
 export default class Register extends Component {
@@ -73,7 +74,7 @@ export default class Register extends Component {
             <span>Digite seu melhor email</span>
             <input
               className="input"
-              name="password"
+              name="email"
               type="email"
               onFocus={this.handleFocus}
               onBlur={this.handleFocusOut}
@@ -92,12 +93,13 @@ export default class Register extends Component {
               onInput={this.registerPassword}
             />
           </label>
-          <Link to="/">
+          <Link to={Path.HOME}>
             <button type="button" className="button" disabled={true} />
           </Link>
-          <Link to="/">
-            <span className="login__link">Já possui uma conta?</span>
-          </Link>
+
+          <span className="login__link">
+            <Link to={Path.HOME}>Já possui uma conta?</Link>
+          </span>
         </div>
       </div>
     );

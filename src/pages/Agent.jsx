@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { AGENTS } from ".././data/getAgents";
 
+import GameNavBar from "../components/GameNavBar";
+
 import "../style/agent/agent.css";
 import "../style/agent/agentContent.css";
 import "../style/agent/agentInfo.css";
@@ -11,8 +13,8 @@ function Agent() {
   const agent = AGENTS.find((agent) => agent.id === id);
   return (
     <section className="agent">
+      <GameNavBar />
       <div className="agent__content">
-        <span>Algumas informações sobre {agent.name}</span>
         <div className="agent__info">
           <h1>Agente {agent.name}</h1>
           <img

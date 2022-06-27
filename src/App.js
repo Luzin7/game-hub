@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet,
 } from "react-router-dom";
 import * as Path from "./utils/pathNames";
 
@@ -12,7 +11,8 @@ import Help from "./pages/Help";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 import ValorantAgents from "./pages/ValorantAgents";
-import Agent from './pages/Agent';
+import Agent from "./pages/Agent";
+import RecoverLogin from "./pages/RecoverLogin";
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
 const Game = React.lazy(() => import("./pages/Game"));
@@ -34,6 +34,7 @@ export default class App extends React.Component {
           />
           <Route path={Path.HELP} element={<Help />} />
           <Route path={Path.REGISTER} element={<Register />} />
+          <Route path={Path.RECOVER_LOGIN} element={<RecoverLogin />} />
           <Route
             path={Path.HOME}
             element={

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
 
 import GameNavBar from ".././components/GameNavBar";
 import Footer from ".././components/Footer";
@@ -35,6 +35,7 @@ export default function Game() {
           <p className="desc__long">{game.description__long}</p>
         </div>
       </div>
+      <Outlet />
       <Footer />
     </div>
   );

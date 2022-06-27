@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import getUser from "../utils/getUser";
 import getPassword from "../utils/getPassword";
+import * as Path from "../utils/pathNames";
 import "../style/login.css";
 
 export default class Login extends Component {
@@ -84,7 +85,7 @@ export default class Login extends Component {
                 onInput={this.ablePassword}
               />
             </label>
-            <label className="login__label">
+            <label className="login__label" htmlFor="password">
               <span>Senha</span>
               <input
                 className="input"
@@ -97,11 +98,11 @@ export default class Login extends Component {
               />
             </label>
           </form>
-          <Link to="/home">
+          <Link to={Path.HOME}>
             <button type="button" className="button" disabled={true} />
           </Link>
           <div className="login__links">
-            <Link to="/ajuda">
+            <Link to={Path.HELP}>
               <span className="login__link">
                 Não consegue entrar na sua conta?
               </span>

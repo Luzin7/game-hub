@@ -1,17 +1,17 @@
-.home__content{
+.home__content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }
 
-.home__content h1:first-child{
+.home__content h1:first-child {
   text-align: center;
   font-size: 2.7em;
   text-transform: uppercase;
 }
 
-.home__content h1:first-child::after{
+.home__content h1:first-child::after {
   content: "";
   width: 500px;
   height: 5px;

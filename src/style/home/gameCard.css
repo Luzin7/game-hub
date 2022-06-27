@@ -1,9 +1,9 @@
-.game__card{
+.game__card {
   text-align: center;
   margin: 2em;
 }
 
-.game__card img{
+.game__card img {
   max-width: 500px;
   max-height: 500px;
   width: auto;

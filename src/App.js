@@ -1,13 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import * as Routers from "./constants/Routes";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
+import * as Path from "./utils/pathNames";
 
 import Loading from "./components/Loading";
-import Ajuda from "./pages/Ajuda";
-import Cadastro from "./pages/Cadastro";
+import Help from "./pages/Help";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 import ValorantAgents from "./pages/ValorantAgents";
-import LolChampions from "./pages/LolChampions";
+import Agent from './pages/Agent';
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
 const Game = React.lazy(() => import("./pages/Game"));
@@ -20,17 +25,17 @@ export default class App extends React.Component {
           <Route
             index
             exact
-            path={Routers.LOGIN}
+            path={Path.LOGIN}
             element={
               <React.Suspense fallback={<Loading />}>
                 <Login />
               </React.Suspense>
             }
           />
-          <Route path={Routers.HELP} element={<Ajuda />} />
-          <Route path={Routers.REGISTER} element={<Cadastro />} />
+          <Route path={Path.HELP} element={<Help />} />
+          <Route path={Path.REGISTER} element={<Register />} />
           <Route
-            path={Routers.HOME}
+            path={Path.HOME}
             element={
               <React.Suspense fallback={<Loading />}>
                 <Home />
@@ -38,23 +43,25 @@ export default class App extends React.Component {
             }
           />
           <Route
-            path={Routers.GAME}
+            path={Path.GAME}
             element={
               <React.Suspense fallback={<Loading />}>
                 <Game />
               </React.Suspense>
             }
-          ></Route>
+          >
+            <Route path={Path.AGENTS} element={<ValorantAgents />} />
+          </Route>
+
           <Route
-            exact
-            path="/api"
+            path={Path.AGENT}
             element={
               <React.Suspense fallback={<Loading />}>
-                {/* <LolChampions /> */}
-                <ValorantAgents />
+                <Agent />
               </React.Suspense>
             }
           />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

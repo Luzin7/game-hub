@@ -40,6 +40,7 @@ export const GAMES = [
       "Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Suco de cevadiss deixa as pessoas mais interessantis.Manduma pindureta quium dia nois paga.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.",
     description__long:
       "Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.Posuere libero varius.",
+      media: 'https://media4.giphy.com/media/G76lxzCfpnBDdn7zZV/giphy.gif?cid=ecf05e4716nwfh4iukzpoojud84kwhfrp0m582ogywkfvdi5&rid=giphy.gif&ct=g',
     url: "https://www.brawlhalla.com/",
   },
   {
@@ -50,6 +51,7 @@ export const GAMES = [
       "Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Aenean aliquam molestie leo, vitae iaculis nisl.Quem manda na minha terra sou euzis!Suco de cevadiss deixa as pessoas mais interessantis.",
     description__long:
       "Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.Posuere libero varius.",
+      media: 'https://media4.giphy.com/media/PF5UAWl27jm8ATVsSW/giphy.gif?cid=ecf05e47rld5zou5kam9jvpj2qab7pp5dwgmmqszh6bmw8a4&rid=giphy.gif&ct=g',
     url: "https://www.xbox.com/pt-br/games/store/forza-horizon-5-edicao-padrao/9nkx70bbcdrn",
   },
   {
@@ -60,6 +62,8 @@ export const GAMES = [
       "Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis!Leite de capivaris, leite de mula manquis sem cabeça.Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Cevadis im ampola pa arma uma pindureta.",
     description__long:
       "Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Aenean aliquam molestie leo, vitae iaculis nisl.",
+    media:
+      "https://media2.giphy.com/media/2roTVUF0LFvZwYcCMb/giphy.gif?cid=ecf05e47vi0ru2ai7jas58xrat7p6eshd5udx7puw4883j3u&rid=giphy.gif&ct=g",
     url: "https://www.rocketleague.com/",
   },
 ];

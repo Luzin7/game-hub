@@ -26,14 +26,14 @@ export default class RecoverLogin extends Component {
     if (!validaEmail.test(target.value) & (target.value.length > 6)) {
       button.setAttribute("disabled", true);
     } else if (validaEmail.test(target.value)) {
-      button.removeAttribute("disabled");
-      button.setAttribute("id", "button__active");
       if (target.value === localStorage.getItem("userEmail")) {
         let p = document.createElement("p");
         p.setAttribute("class", "download__text");
         p.textContent =
           "Clique no botão e faça o download das suas informações de login.";
         document.querySelector(".recoverLogin__label").appendChild(p);
+        button.removeAttribute("disabled");
+        button.setAttribute("id", "button__active");
       }
     }
   };

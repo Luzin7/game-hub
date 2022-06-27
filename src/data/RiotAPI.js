@@ -1,4 +1,4 @@
-import { KEY } from "../constants/keyAPI";
+import { KEY } from "../utils/keyAPI";
 
 const fetchValorantCharacters = async () => {
   try {

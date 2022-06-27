@@ -1,23 +1,25 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import * as Routers from '../constants/Routes'
-
+import * as Path from "../utils/pathNames";
 
 import "../style/components/footer.css";
 
 export default function Footer() {
-  const params = useParams();
+  const { id } = useParams();
   return (
-    <div className="navbar footer">
-      {params.id === "valorant" || "league-of-legends" ? (
+    <div className="footer">
+      {id === "valorant" ? (
         <ul>
-          <li><Link to={1}>Servidor</Link></li>
-          <li><Link to={Routers.CHARACTERS}>Personagens</Link></li>
+          <li>
+            <Link to={Path.AGENTS}>Personagens do jogo</Link>
+          </li>
         </ul>
       ) : (
-        <>
-          <p>Eita</p>
-        </>
+        <ul>
+          <li>
+            <Link to={"#"}>Saber mais</Link>
+          </li>
+        </ul>
       )}
     </div>
   );

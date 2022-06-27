@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import '../style/cadastro.css'
+import "../style/cadastro.css";
 
 export default class Register extends Component {
   handleFocus = ({ target }) => {
@@ -19,18 +19,26 @@ export default class Register extends Component {
   };
 
   registerUser = ({ target }) => {
-    const password = document.querySelector("input[type=password]");
+    const button = document.querySelector("button[type=button]");
+
     if (target.value.length >= 4) {
       localStorage.setItem("userName", target.value);
-      password.removeAttribute("disabled");
     } else if (target.value.length < 4) {
-      password.setAttribute("disabled", true);
+      button.setAttribute("disabled", true);
     }
   };
 
   registerEmail = ({ target }) => {
-    if (target.value.length > 10) {
+    let validaEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const password = document.querySelector("input[type=password]");
+
+    if (!validaEmail.test(target.value) & (target.value.length > 6)) {
+      target.setAttribute("id", "input__wrong");
+      password.setAttribute("disabled", true);
+    } else if (validaEmail.test(target.value)) {
+      target.removeAttribute("id", "input__wrong");
       localStorage.setItem("userEmail", target.value);
+      password.removeAttribute("disabled");
     }
   };
 
@@ -62,7 +70,7 @@ export default class Register extends Component {
             />
           </label>
           <label className="register__label">
-            <span>Digite seu email</span>
+            <span>Digite seu melhor email</span>
             <input
               className="input"
               name="password"
@@ -70,7 +78,7 @@ export default class Register extends Component {
               onFocus={this.handleFocus}
               onBlur={this.handleFocusOut}
               onInput={this.registerEmail}
-              />
+            />
           </label>
           <label className="register__label">
             <span>Digite sua senha</span>
@@ -84,13 +92,12 @@ export default class Register extends Component {
               onInput={this.registerPassword}
             />
           </label>
-          {/* ajustar esse link do botão, da pra entrar mesmo sem fazer o cadastro */}
           <Link to="/">
             <button type="button" className="button" disabled={true} />
           </Link>
           <Link to="/">
-              <span className="login__link">Já possui uma conta?</span>
-            </Link>
+            <span className="login__link">Já possui uma conta?</span>
+          </Link>
         </div>
       </div>
     );

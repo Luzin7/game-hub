@@ -1,6 +1,6 @@
 import React from "react";
 import { AGENTS } from "../data/getAgents";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../style/characters/contentMain.css";
 import "../style/characters/main.css";
@@ -15,12 +15,12 @@ export default class ValorantAgents extends React.Component {
           {data.map((char) => (
             <div key={char.id} className="characters__box">
               <div className="character__box__content">
-                {/* <Link to={`/jogos/valorant/${char.id}`}> */}
-                <a
+                <Link to={`/jogos/valorant/agentes/${char.id}`}>
+                  {/* <a
                   href={`https://playvalorant.com/pt-br/agents/${char.id}`}
                   target="_blank"
                   rel="noreferrer"
-                >
+                > */}
                   <img
                     src={`https://cdn.mobalytics.gg/assets/valorant/images/agents/full-size-small/${char.id}.png`}
                     alt={char.name}
@@ -31,8 +31,8 @@ export default class ValorantAgents extends React.Component {
                       <p>{char.class}</p>
                     </div>
                   </div>
-                </a>
-                {/* </Link> */}
+                  {/* </a> */}
+                </Link>
               </div>
             </div>
           ))}

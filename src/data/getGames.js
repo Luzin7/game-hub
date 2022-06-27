@@ -5,6 +5,8 @@ export const GAMES = [
     img: "https://files.tecnoblog.net/wp-content/uploads/2019/05/league-of-legends-700x394.jpg",
     description:
       "League of Legends é um jogo de estratégia em que duas equipes de cinco poderosos Campeões se enfrentam para destruir a base uma da outra. Escolha entre mais de 140 Campeões para realizar jogadas épicas, assegurar abates e destruir torres conforme você luta até a vitória.",
+    description__long:
+      "Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.Posuere libero varius.",
     media:
       "https://c.tenor.com/EAjohp6VzvgAAAAC/league-of-legends-riot-games.gif",
     url: "https://www.leagueoflegends.com",

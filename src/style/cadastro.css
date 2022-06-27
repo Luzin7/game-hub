@@ -36,7 +36,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 25px;
-  cursor: text;
+  cursor: default;
   transition: all 0.2s ease;
 }
 
@@ -60,6 +60,7 @@
   font-size: 1.2em;
   font-weight: 500;
   padding: 25px 10px 15px;
+  margin-bottom: 1em;
 }
 
 .input:focus{

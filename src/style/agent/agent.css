@@ -1,0 +1,19 @@
+.agent {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(17, 17, 17, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .agent {
+    background: var(--bg__color);
+  }
+}

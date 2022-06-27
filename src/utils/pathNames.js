@@ -1,9 +1,9 @@
 export const LOGIN = "/";
 export const HELP = "/ajuda";
+export const ABOUT = "/about";
 export const REGISTER = "/cadastro";
+export const RECOVER_LOGIN = "/recuperar-login";
 export const HOME = "/home";
 export const GAME = "/jogos/:id";
-
-// Dev
-export const AGENTS = 'agentes'
-export const AGENT = '/jogos/valorant/agentes/:id'
+export const AGENTS = "agentes";
+export const AGENT = "/jogos/valorant/agentes/:id";

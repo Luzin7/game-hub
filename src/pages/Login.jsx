@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import gitIcon from "../assets/icons/gitIcon.png";
 import getUser from "../utils/getUser";
 import getPassword from "../utils/getPassword";
 import * as Path from "../utils/pathNames";
@@ -70,9 +71,15 @@ export default class Login extends Component {
       <div className="main__login">
         <div className="login">
           <div className="login__logo">
-            <img className="logo" src="" alt="Logo do projeto" />
+            <a
+              href="https://github.com/Luzin7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="logo" src={gitIcon} alt="Logo do projeto" />
+            </a>
           </div>
-          <h1>Fazer login</h1>
+          <h1>Entre na sua conta</h1>
           <form>
             <label className="login__label" htmlFor="nick">
               <span>Nome de usuário</span>

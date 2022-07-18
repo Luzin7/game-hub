@@ -1,14 +1,11 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import * as Path from "./utils/pathNames";
 
 import Loading from "./components/Loading";
 import Help from "./pages/Help";
 import Register from "./pages/Register";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ValorantAgents from "./pages/ValorantAgents";
 import Agent from "./pages/Agent";
@@ -35,6 +32,7 @@ export default class App extends React.Component {
           <Route path={Path.HELP} element={<Help />} />
           <Route path={Path.REGISTER} element={<Register />} />
           <Route path={Path.RECOVER_LOGIN} element={<RecoverLogin />} />
+          <Route path={Path.ABOUT} element={<About />} />
           <Route
             path={Path.HOME}
             element={

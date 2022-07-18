@@ -1,0 +1,38 @@
+.about__content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(45px, 10%, 70px);
+  min-height: 90vh;
+}
+
+strong {
+  color: var(--purple__active);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.about__content h1,
+.about__content h2 {
+  font-size: 38px;
+}
+
+.about__content h2 {
+  margin-top: 1em;
+}
+
+.about__content p {
+  margin-top: 1em;
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.about__content a {
+  text-decoration: underline;
+}
+
+.about__content a:hover {
+  text-decoration: none;
+}

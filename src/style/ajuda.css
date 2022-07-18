@@ -1,6 +1,4 @@
 .main__help {
-  display: flex;
-  justify-content: center;
   background-color: var(--bg__color);
 }
 
@@ -9,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 60vw; /*100vw mobile*/
   min-height: 100vh;
   background-color: var(--bg__color);
   color: var(--text__color);
@@ -19,13 +16,13 @@
 .help h1 {
   color: var(--text__color);
   font-weight: bold;
-  font-size: 2.7em;
+  font-size: 38px;
   margin-bottom: 0.7em;
 }
 
 .help p {
   color: #ebebeb;
-  font-size: 1.5em;
+  font-size: 21px;
   margin-bottom: 1em;
 }
 

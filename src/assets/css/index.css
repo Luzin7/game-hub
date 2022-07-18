@@ -40,9 +40,6 @@ html {
 }
 
 .navbar{
-  display: flex;
-  width: 100%;
-  align-items: center;
   min-height: 70px;
   background-color: var(--navBar__color);
   color: var(--text__color);

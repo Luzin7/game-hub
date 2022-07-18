@@ -1,7 +1,6 @@
 import React from "react";
 import NavHelp from "../components/NavHelp";
 import "../style/about.css";
-
 export default function About() {
   return (
     <div className="about">
@@ -21,9 +20,9 @@ export default function About() {
           <p className="desc__sobre__mim">
             Olá! meu nome é <strong>Luan Victor</strong> e estudo programação de
             forma autodidata. Desde criança sou interessado no mundo da
-            programação, passando por <strong>desenvolvedor de jogos</strong> até{" "}
-            <strong>desenvolvedor web</strong>, que é o que estou estudando no
-            momento. Minhas práticas, no momento, estão sendo para o{" "}
+            programação, passando por <strong>desenvolvedor de jogos</strong>{" "}
+            até <strong>desenvolvedor web</strong>, que é o que estou estudando
+            no momento. Minhas práticas, no momento, estão sendo para o{" "}
             <strong>Front-End</strong>, porém, por amar sistemas de segurança e
             coisas relacionadas, não descarto a importância do Back-End e
             pretendo estudá-lo assim que possível.

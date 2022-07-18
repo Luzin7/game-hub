@@ -19,7 +19,7 @@
 .login__logo {
   width: 140px;
   margin-bottom: 4em;
-  background-color: var(--purple__logo);
+  text-align: center;
 }
 
 .login h1 {

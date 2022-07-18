@@ -15,7 +15,9 @@ export default function HomeNavBar() {
         </div>
       </div>
       <i className="icon">
-        <img src={gitIcon} alt="" />
+        <a href="https://github.com/Luzin7" target="_blank" rel="noreferrer">
+          <img className="logo" src={gitIcon} alt="Logo do projeto" />
+        </a>
       </i>
     </div>
   );

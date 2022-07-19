@@ -1,18 +1,8 @@
-import React, { Component } from "react";
-import NavHelp from "./../components/NavHelp";
+import React from "react";
+import { NotFound } from "../components/NotFound";
 
-import "../style/notFound.css";
-
-export default class NotFound extends Component {
-  render() {
-    return (
-      <div className="notFound">
-        <NavHelp />
-        <div className="notFound__content">
-          <h1>Não estou conseguindo achar essa página... 🤔</h1>
-          <p>Talvez os links acima te ajude! 😊</p>
-        </div>
-      </div>
-    );
-  }
+function NotFoundPage() {
+  return <NotFound />;
 }
+
+export default NotFoundPage;

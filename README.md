@@ -4,7 +4,7 @@
 
 Essa aplicação foi desenvolvida como prática da ferramenta React.JS utlizando <a href="https://reactrouter.com/">React Router</a>. Sendo esse o meu terceiro projeto utilizando React, desenvolvi uma aplicação que mostra informações sobre os jogos disponibilizados por uma API fake.
 
-## Funcionalidades
+### Funcionalidades
 
 - Responsivo
 - Rotas dinâmicas

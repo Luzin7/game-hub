@@ -1,10 +1,14 @@
 ## Game-hub
 
-<a href="https://luzin7.github.io/game-hub/" >Execute a aplicação clicando aqui!<a>
-
 ### Contexto
 
-Essa aplicação foi desenvolvida como prática da ferramenta React.JS utlizando <a href="https://reactrouter.com/">React Router</a>. Sendo esse o meu terceiro projeto utilizando React, desenvolvi uma aplicação que mostra informações sobre os jogos disponíveis no site com auxílio de API.
+Essa aplicação foi desenvolvida como prática da ferramenta React.JS utlizando <a href="https://reactrouter.com/">React Router</a>. Sendo esse o meu terceiro projeto utilizando React, desenvolvi uma aplicação que mostra informações sobre os jogos disponibilizados por uma API fake.
+
+## Funcionalidades
+
+- Responsivo
+- Rotas dinâmicas
+- Cadastro e login (localstorage)
 
 ### Técnologias usadas
 
@@ -19,7 +23,6 @@ Front-end:
   <img align="left" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
   <img align="left" height="30" width="40" src="https://cdn.pellerex.com/public/ecosystem/web/content/web-spa-routing/pellerex-spa-routing.png">
 </div>
-</br>
 </br>
 </br>
 
